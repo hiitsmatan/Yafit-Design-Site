@@ -1,0 +1,8 @@
+img{
+    filter: brightness(65%);
+}
+
+html,body{
+    min-height: 100vh;
+    min-width: 100vh;
+ }
