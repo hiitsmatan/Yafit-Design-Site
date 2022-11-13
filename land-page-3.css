@@ -6,3 +6,18 @@ html,body{
     min-height: 100vh;
     min-width: 100vh;
  }
+
+ main
+ {
+    background-color: rgb(37, 35, 33);
+ }
+
+ h1
+ {
+    color: #f3f0d7;
+ }
+
+ .card
+ {
+    background-color: #f3f0d7;
+ }
