@@ -1,0 +1,13 @@
+
+.content
+{
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+body
+{
+    background-color:#2e2e2e ;
+    color: white;
+}
