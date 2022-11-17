@@ -1,4 +1,4 @@
-img{
+.slide-img{
     filter: brightness(65%);
 }
 
@@ -15,9 +15,12 @@ html,body{
  h1
  {
     color: #f3f0d7;
+    
  }
+ 
+ .carousel-caption {
+    top: 50%;
+    bottom: auto;
+}
 
- .card
- {
-    background-color: #f3f0d7;
- }
+
