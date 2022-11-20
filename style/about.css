@@ -1,13 +1,15 @@
 
-.content
-{
-    margin-top: 10rem;
-    display: flex;
-    justify-content: center;
-}
-
 body
 {
     background-color:#2e2e2e ;
-    color: white;
+    color: black;
 }
+
+/* .card
+{
+    margin: 15rem 30rem 0  30rem;
+    border-color: wheat;
+    color: white;
+    background-color: #2e2e2e;
+} */
+
