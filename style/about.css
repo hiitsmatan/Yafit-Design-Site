@@ -1,15 +1,16 @@
-
-body
-{
-    background-color:#2e2e2e ;
-    color: black;
+body {
+    background-color: #202020;
 }
 
-/* .card
-{
-    margin: 15rem 30rem 0  30rem;
-    border-color: wheat;
+.card {
+    /* margin: 11rem 30rem 0 30rem; */
+    border-color: #202020;
     color: white;
     background-color: #2e2e2e;
-} */
+}
 
+
+/* .nature {
+    width: 100%;
+    height: auto;
+} */
