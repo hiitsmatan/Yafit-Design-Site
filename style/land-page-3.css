@@ -1,26 +1,17 @@
-.slide-img{
-    filter: brightness(65%);
+.html {
+   background-color: black;
 }
 
-html,body{
-    min-height: 100vh;
-    min-width: 100vh;
- }
-
- main
- {
-    background-color: rgb(37, 35, 33);
- }
-
- h1
- {
-    color: #f3f0d7;
-    
- }
- 
- .carousel-caption {
-    top: 50%;
-    bottom: auto;
+.slide-img {
+   filter: brightness(65%);
 }
 
+h1 {
+   color: #f3f0d7;
 
+}
+
+.carousel-caption {
+   top: 50%;
+   bottom: auto;
+}
