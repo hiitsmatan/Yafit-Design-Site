@@ -26,7 +26,7 @@ h1 {
 } */
 
 .carousel-item {
-    min-height: calc(100vh - 85px);
+    min-height: calc(100vh - 95px);
     background-position: center;
     background-size: cover;
     position: relative;
