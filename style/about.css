@@ -10,3 +10,7 @@ body {
 .container {
     max-width: 970px;
 }
+
+.text {
+    font-size: 1.1rem;
+}
