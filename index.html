@@ -15,27 +15,28 @@
 </head>
 
 <body>
+    <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h1 class="modal-title fs-5 text-reset" id="exampleModalLabel">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <form action="https://formsubmit.co/f5a49746927d2150a626e651ab3a6213" method="POST">
+                <form action="https://formsubmit.co/example-mail" method="POST">
                     <div class="modal-body">
                         <div class="mb-3">
                             <h4></h4>
-                            <label for="exampleFormControlInput1" class="form-label">Full name</label>
-                            <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Full name">
-                            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
-                            <label for="exampleFormControlInput1" class="form-label">Phone number</label>
-                            <input type="number" class="form-control" name="phone number" id="exampleFormControlInput1" placeholder="phone number">
+                            <label for="exampleFormControlInput1" class="form-label">שם מלא</label>
+                            <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="שם מלא" required>
+                            <label for="exampleFormControlInput1" class="form-label">כתובת מייל</label>
+                            <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                            <label for="exampleFormControlInput1" class="form-label">מספר טלפון</label>
+                            <input type="tel" class="form-control" name="phone number" id="exampleFormControlInput1" placeholder="0123456789" pattern="[0-9]{10}" required>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-                            <textarea class="form-control" name="additional massage" id="exampleFormControlTextarea1" rows="3"></textarea>
+                            <label for="exampleFormControlTextarea1" class="form-label">טקסט חופשי</label>
+                            <textarea class="form-control" name="additional massage" id="exampleFormControlTextarea1" rows="3" required></textarea>
                         </div>
                     </div>
                     <div class="modal-footer">
@@ -46,6 +47,12 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#exampleModal').modal('show');
+        });
+    </script>
 
     <!-- navbar -->
     <div id="nav-placeholder">
