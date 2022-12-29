@@ -6,11 +6,6 @@ body {
     filter: brightness(65%);
 }
 
-.carousel,
-img {
-    filter: brightness(85%);
-}
-
 h1 {
     color: #f3f0d7;
 }
