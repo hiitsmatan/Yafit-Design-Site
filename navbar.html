@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="style/navbar.css" />
+<link class="include-custom-path" rel="stylesheet" href="style/navbar.css" />
 <nav dir="ltr" class="navbar navbar-expand-lg bg-light sticky-top px-2">
     <a class="navbar-brand" alt="Logo">
         <img src="images/no text logo.png" class="img-fluid main-logo col" alt="" />
@@ -10,27 +10,66 @@
     <div class="collapse navbar-collapse" dir="rtl" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item item">
-                <a class="nav-link active" aria-current="page" href="index.html">עמוד הבית</a>
+                <a class="nav-link active include-custom-path" aria-current="page" href="index.html">עמוד הבית</a>
             </li>
             <li class="nav-item dropdown item">
-                <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">שירותים</a>
+                <a href="#" class="nav-link dropdown-toggle include-custom-path" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">שירותים</a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    <li><a href="#" class="dropdown-item">feature 1</a></li>
-                    <li><a href="#" class="dropdown-item">feature 2</a></li>
-                    <li><a href="#" class="dropdown-item">feature 3</a></li>
+                    <li><a href="#" class="dropdown-item include-custom-path">feature 1</a></li>
+                    <li><a href="#" class="dropdown-item include-custom-path">feature 2</a></li>
+                    <li><a href="#" class="dropdown-item include-custom-path">feature 3</a></li>
                 </ul>
             </li>
             <li class="nav-item item">
-                <a class="nav-link" href="projects.html">פרויקטים</a>
+                <a class="nav-link include-custom-path" href="projects.html">פרויקטים</a>
             </li>
             <li class="nav-item item">
-                <a class="nav-link" href="about.html">אודות</a>
+                <a class="nav-link include-custom-path" href="about.html">אודות</a>
             </li>
             <li class="nav-item item">
-                <a class="nav-link" href="#">יצירת קשר</a>
+                <a class="nav-link include-custom-path" href="#">יצירת קשר</a>
             </li>
         </ul>
     </div>
-
-
 </nav>
+
+<script>
+    $(document).ready(function() {
+        var path = "";
+        let counter = 0;
+        if (typeof customPath !== 'undefined') {
+            path = customPath;
+        }
+        // Select all img elements
+        $("img").each(function() {
+            // Get the src attribute of the current element
+            var src = $(this).attr("src"); //  "image.png"
+
+            // Concatenate ../ with the image path
+            var newSrc = path + src; // "../" + "image.png" = "../image.png"
+
+            // Set the new src attribute
+            $(this).attr("src", newSrc);
+        });
+
+        // Select all href attribute
+        $("[href]").each(function() {
+            //To every element without the specific class 
+            if ($(".include-custom-path")) {
+                //Get href attribute of the current elment
+                var href = $(this).attr("href");
+                // Concatenate ../ with the href path
+                var newHref = path + href;
+                // Set the new href attribute
+                $(this).attr("href", newHref);
+            }
+        });
+        console.log(counter)
+
+
+        // $(this).attr("href").each(function() {
+        //     counter++;
+        // });
+        // console.log(counter);
+    });
+</script>
