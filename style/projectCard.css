@@ -1,0 +1,18 @@
+body {
+    background-color: #202020;
+    color: white;
+}
+
+.card {
+    background-color: #2e2e2e;
+}
+
+.btn {
+    color: white;
+    background-color: rgb(29, 29, 29);
+    border: 0000;
+}
+
+.btn:hover {
+    background-color: #b6a267;
+}

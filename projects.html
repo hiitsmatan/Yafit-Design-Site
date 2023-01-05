@@ -23,8 +23,30 @@
 
     <h1 class="container text-center">פרוייקטים</h1>
     <!-- projects cards -->
+
+
     <div class=" container">
-        <div class="row gx-5 justify-content-between pt-4">
+        <div class="row gx-5 justify-content-between pt-4" id="projectCard-placeholder">
+            <script>
+                $(document).ready(function() {
+                    // Load the contents of the file "external.html" into the element with the ID "template"
+                    $('#projectCard-placeholder').load('projectCard.html', function() {
+                        // Select the element to be copied
+                        var element = $('#projectCard-placeholder');
+
+                        // Use a for loop to create 21 copies of the element
+                        for (var i = 0; i < 5; i++) {
+                            // Use the clone function to create a copy of the element
+                            var copy = element.clone();
+
+                            // Append the copy to the DOM
+                            $('#projectCard-placeholder').append(copy);
+                        }
+                    });
+                });
+            </script>
+        </div>
+        <!-- <div class="row gx-5 justify-content-between pt-4">
             <div class="card col-1 p-2" style="width: 20rem;">
                 <img src="https://picsum.photos/1920/1080" class="card-img-top" alt="...">
                 <div class="card-body text-center">
@@ -124,8 +146,7 @@
                     <a href="#" class="btn" id="project12">Project details</a>
                 </div>
             </div>
-
-        </div>
+        </div> -->
     </div>
 
 
