@@ -24,11 +24,11 @@
                         <div class="mb-3">
                             <h4></h4>
                             <label for="exampleFormControlInput1" class="form-label">Full name</label>
-                            <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Full name">
+                            <input type="text" class="form-control" name="name" id="exampleFormControlInput1" placeholder="Full name" required>
                             <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com">
+                            <input type="email" class="form-control" name="email" id="exampleFormControlInput1" placeholder="name@example.com" required>
                             <label for="exampleFormControlInput1" class="form-label">Phone number</label>
-                            <input type="number" class="form-control" name="phone number" id="exampleFormControlInput1" placeholder="phone number">
+                            <input type="number" class="form-control" name="phone number" id="exampleFormControlInput1" placeholder="phone number" required>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
@@ -44,6 +44,11 @@
         </div>
     </div>
 
+    <script>
+        $(document).ready(function() {
+            $('#exampleModal').modal('show');
+        });
+    </script>
     <!-- navbar -->
     <div id="nav-placeholder">
         <script>
