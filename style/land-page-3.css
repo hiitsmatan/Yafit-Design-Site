@@ -15,6 +15,12 @@ h1 {
     bottom: auto;
 }
 
+.modal-header .close {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+  }
+  
 
 /* .carousel {
     height: 50%;

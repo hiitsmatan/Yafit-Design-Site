@@ -6,3 +6,13 @@ body{
     color: #f3f0d7;
     background-color: #2e2e2e;
 }
+
+.contact-btn{
+    color: white;
+    background-color: rgb(29, 29, 29);
+    border: 0000;
+}
+
+.contact-btn:hover{
+    background-color: #b6a267;
+}
